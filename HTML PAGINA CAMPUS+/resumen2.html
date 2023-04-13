@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusLand</title>
+    <link rel="stylesheet" href="prism.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+	<script src="prism.js"></script>
+</head>
+<body>
+    <h1>Sistemas en una pagina y HTML</h1>
+    <pre><code class="language-python">
+21/03/2023
+
+BACKEND: (es como la parte de atras de los procesos de una pagina o programa)
+Rendimiento
+Logica del servidor
+Base de Datos
+Microservicios
+Programa API
+Seguridad
+
+FRONTEND: (es lo que esta en la parte delantera de una pagina o programa)
+Interfaz web
+Logica del cliente
+Consumo de APIS
+Interaccion de usuario
+
+APIS: (se encarga de unir el BACKEND con el FRONTEND)
+
+REST > API > GRAPHQL
+
+EJEMPLO EN UN RESTAURANTE:
+BACKEND es la cocina, FRONTEND es la mesa y otras cosas visuales del RESTAURANTE, API serian los meseros
+
+ARQUITECTURA WEB:
+- Se centra en optimizar la estructura de un sitio web, es decir, organizar las páginas, URLs, enlaces internos y todo aquello que la conforman.
+- Busca definir en forma clara la arquitectura de la información.
+
+Recomendaciones:
+Establecer lo que quieres mostrar.
+Definir los objetivos de los usuarios.
+¿Quiénes son las personas que utilizarán el sitio web?
+¿Qué van a hacer estos usuarios en la web?
+¿Cuáles son sus metas?
+</code></pre>
+<h2>Nomenclatura de URLs</h2>
+<center><img src="img/l2.JPG"></img></center>
+<pre><code class="language-python">
+Ejemplos:
+dominio.com/titulo-entrada
+dominio.com/categoria/nombre-de-pagina
+dominio.com/producto/marca-producto
+Buenas para SEO: www.compraripadbarato.com
+Buenas para SEO: www.conseguirdinerorapido.com
+MAL: www.ejemplo.com/ficha_de_un_producto.html
+MAL: www.ejemplo.com/ficha+de+un+producto.html
+BIEN: www.ejemplo.com/ficha-de-un-producto/
+
+Protocolo: Existen dos tipos de protocolos básicos:
+http: Es el protocolo básico por el que se rigen la gran mayoría de las páginas en servidores WWW.
+https: Es el protocolo, de seguridad. Este tipo de protocolo se usa para proteger datos del usuario como números de tarjetas de créditos o datos personales.
+
+Hosting: es el espacio físico donde se van a almacenar los archivos que conforman 
+su web, sus correos electrónicos y la información que se considere necesaria (Fotos, videos, archivos, bases de datos…).
+
+Almacenamiento en la nube (Cloud Storage): es un modelo de servicio en el cual los datos de un sistema de cómputo se almacenan, 
+se administran, y se respaldan de forma remota, en servidores que están en la nube y que son administrados por un proveedor del servicio.
+Estos datos se ponen a disposición de los usuarios a través de una red, como Internet.
+
+Dominio: Es un nombre base que agrupa a un conjunto de equipos o dispositivos y que permite proporcionar nombres de equipo más 
+fácilmente recordables en lugar de una dirección IP numérica. Permiten a cualquier servicio (de red) moverse a otro lugar 
+diferente en la topología de Internet, que tendrá una dirección IP diferente.
+
+22/03/2023
+
+HTML: da la estructura a la pagina
+
+Etiquetas semánticas: 
+HTML utiliza marcas o etiquetas compuestas de códigos enmarcados por los signos "< >". 
+Cualquier documento HTML comienza con la etiqueta html y termina con la etiqueta /html. 
+Dentro existen dos zonas bien identificadas: el encabezamiento, que se identifica con la 
+etiqueta head y /head y sirve para definir una serie de valores válidos en todo el 
+documento, y el cuerpo del documento, representado por etiqueta body y /body que muestra 
+la información del documento.
+
+Estructura básica de un documento HTML:</code></pre>
+<center><img src="img/l3.JPG"></img></center>
+
+<pre><code class="language-html">
+Todo documento web debe iniciar con: &lt;!DOCTYPE html&gt; De esta manera el documento le está diciendo 
+al navegador que es un documento de tipo HTML5.
+Es importante definir el juego de caracteres que utilizará:
+&lt;head>
+    &lt;meta charset="UTF-8"&gt;
+&lt;/head&gt;
+
+Estructura de las Etiquetas
+&lt;elemento atributo1=“valor1”&gt;
+    Contenido
+&lt;/elemento&gt;
+  
+&lt;video src="movie.ogv" poster="poster.jpg" autoplay loop controls&gt;&lt;/video&gt;
+
+Algunas otras etiquetas:
+&lt;br&gt; cambio de línea.
+&lt;wbr&gt; cambio de línea de acuerdo al ancho de la pantalla.
+&lt;mark&gt;Texto&lt;/mark&gt; Texto resaltado.
+&lt;figure&gt;
+&lt;img src="firefox.png" alt="Firefox browser"&gt;
+&lt;img src="thunderbird.png" alt="Thunderbird e-mail client"&gt;
+&lt;img src="sunbird.png" alt="Sunbird"&gt;
+&lt;figcaption&gt;Logotipos de tres programas desarrollados
+por Mozilla: Firefox,Thunderbird y Sunbird&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+<h2>Enlaces de ayuda:</h2>
+
+<h3>Canal HTML 5:</h3>
+<center><a href="https://www.youtube.com/watch?v=eesyGnJwfAY&list=PLROIqh_5RZeB92ME1GFyeqDVOa-gL0Ybd">https://www.youtube.com/watch?v=eesyGnJwfAY&list=PLROIqh_5RZeB92ME1GFyeqDVOa-gL0Ybd</a></center>
+<h3>Diseño WEB:</h3>
+<center><a href="https://www.youtube.com/watch?v=ZNIuqnyj0HQ">https://www.youtube.com/watch?v=ZNIuqnyj0HQ</a></center>
+<h3>Teoría de Gestalt:</h3>
+<center><a href="https://www.youtube.com/watch?v=DWKUYkiRysg">https://www.youtube.com/watch?v=DWKUYkiRysg</a></center>
+
+<pre><code class="language-html">JAVASCRIPT: hace mas dinamica la pagina
+
+Antes de hacer la pagina siempre se debe hacer la enmaquetacion de esta
+
+Primera practica en HTML:</code></pre>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;title&gt;Ejemplo basico HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Pagina HTML&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+La forma de correr o visualizar lo que se hizo es darle abrir con cualquier navegador de internet
+En el caso de una pagina siempre tomara el archivo index.html de primero y lo correra o visualizara
+Tambien se hizo este blog:
+
+- Aqui los documentos (index.html, ayuda.html, contacto.html, images, principal.html):</code></pre> 
+<center><a href="https://github.com/andressantage/Mi-primer-blog">https://github.com/andressantage/Mi-primer-blog</a></center>
+<pre><code class="language-html">- Aqui el resultado: </code></pre> 
+<center><a href="https://andressantage.github.io/Mi-primer-blog/">https://andressantage.github.io/Mi-primer-blog/</a></center>
+<pre><code class="language-python">
+Se estaba desarrollado el formulario
+
+3/23/2023
+
+Se completo el formulario:
+
+- Aqui el documento (index.html): </code></pre> 
+<center><a href="https://github.com/andressantage/Mi-primer-formulario">https://github.com/andressantage/Mi-primer-formulario</a></center>
+<pre><code class="language-html">- Aqui el resultado: </code></pre> 
+<center><a href="https://andressantage.github.io/Mi-primer-formulario/">https://andressantage.github.io/Mi-primer-formulario/</a></center>
+<pre><code class="language-python">
+Para unir, en ese caso une dos cosas: colspan="2"
+
+Bootstrap: https://getbootstrap.com/
+Bootstrap:Es una framework para dar estilo a la estructura de HTML
+Con esta linea me enlaza con bootstrap de forma que traer todas sus librerias:</code></pre> 
+<pre><code class="language-html">&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"&gt;</code></pre>
+
+<pre><code class="language-html">Poner el link anterior debajo de la etiqueta <title></title>
+
+Por ejemplo para una etiqueta button se busca en botones de la pagina de bootstrap: https://getbootstrap.com/docs/5.3/components/buttons/
+Luego se encuentra: class="btn btn-outline-primary"
+y otros estilos se copia esa parte al boton requerido de forma que queda:
+&lt;button type="button" class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;
+
+Se hizo una tabla con un boton que se dio un mejor estilo con Bootstrap:
+- Aqui el documento (index.html): </code></pre> 
+<center><a href="https://github.com/andressantage/Tabla">https://github.com/andressantage/Tabla</a></center>
+<pre><code class="language-html">- Aqui el resultado: </code></pre> 
+<center><a href="https://andressantage.github.io/Tabla/">https://andressantage.github.io/Tabla/</a></center>
+
+<h1>Creacion de interfaz de login</h1>
+<p><img src="img/l1.JPG"></p>
+<h2>Codigo HTML:</h2>
+<pre>
+    <code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;es&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Tablas y Formularios&lt;/title&gt;
+&lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; integrity=&quot;sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We&quot; crossorigin=&quot;anonymous&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt;Login&lt;/h3&gt;
+&lt;table&gt;
+    &lt;form&gt;
+        &lt;tr&gt;
+            &lt;th&gt;&lt;label for=&quot;usuario&quot;&gt;Usuario: &lt;/label&gt;&lt;/th&gt;
+            &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;usuario&quot; id=&quot;usuario&quot;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;&lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;&lt;label for=&quot;clave&quot;&gt;Contraseña: &lt;/label&gt;&lt;/th&gt;
+            &lt;td&gt;&lt;input type=&quot;password&quot; name=&quot;clave&quot; id=&quot;clave&quot;&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;&lt;/tr&gt;
+        &lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;text-align: center;&quot;&gt;&lt;button onclick=&quot;validaIngreso()&quot; class=&quot;btn btn-warning&quot;&gt;Ingresar&lt;/button&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/form&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h3>- Aqui el resultado: <a href="https://andressantage.github.io/interfazlogin/">https://andressantage.github.io/interfazlogin/</a></h3>
+<h3>- Aqui los documentos (index.html): <a href="https://github.com/andressantage/interfazlogin">https://github.com/andressantage/interfazlogin</a></h3>
+</body>
+</html>

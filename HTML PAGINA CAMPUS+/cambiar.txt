@@ -1,0 +1,6 @@
+&lt;p style="color:green"&gt;Párrafo de color verde.&lt;/p&gt;
+
+
+
+&lt;
+&gt;
